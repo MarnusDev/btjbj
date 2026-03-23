@@ -1,0 +1,3 @@
+@echo off
+echo Applying tweaks...
+pause
