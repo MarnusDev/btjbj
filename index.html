@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BeTheJokeByJerry v6 Configurator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>BeTheJokeByJerry v6 Configurator</h1>
+<p>Enter your system specs to generate a custom optimizer pack</p>
+
+<form id="configForm">
+  <label>CPU:</label>
+  <input type="text" id="cpu" placeholder="e.g., Ryzen 5800X" required><br>
+  <label>GPU:</label>
+  <input type="text" id="gpu" placeholder="e.g., RTX 3080" required><br>
+  <label>RAM (GB):</label>
+  <input type="number" id="ram" placeholder="16" required><br>
+  <label>Use Wired Controller?</label>
+  <input type="checkbox" id="wired"><br>
+  <label>Internet type:</label>
+  <select id="internet">
+    <option value="pppoe">PPPoE / Fibre</option>
+    <option value="dhcp">DHCP / Fibre / Cable</option>
+  </select><br>
+  <button type="submit">Generate Optimizer Pack</button>
+</form>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
